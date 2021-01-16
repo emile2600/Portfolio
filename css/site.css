@@ -108,20 +108,3 @@ body {
         color: white;
     }
 }
-
-@keyframes arrow-color-switch {
-    0% {
-        border: solid #00395e;
-    }
-    60% {
-        border: solid #107895;
-    }
-    100% {
-        border: solid white;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-    }
-}
