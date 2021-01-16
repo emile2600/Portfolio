@@ -14,9 +14,8 @@
 
 
 <body class="bg-primary-color">
-    
+
     <div class="container card bg-secondary-color" id="front">
-        <div class="col empty-col"></div>
         <div class="text-color">
             <div class="row">
                 <div class="col">
@@ -37,6 +36,37 @@
                         Metry
                     </span>
                 </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="h3">
+                        Age: <pn class="h3" id="age" onload="age()"></pn>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col empty-xl-col"></div>
+                <div class="col empty-xl-col"></div>
+                <div class="col d-flex empty-xl-col justify-content-end">
+                    <button type="button text-color" class="btn" onclick="flip()">
+                        <p class="text-color">Flip <i class="fas fa-arrow-right"></i> </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container card bg-secondary-color" id="back" style="display: none;">
+        <div class="text-color">
+            <div class="row">
+                <div class="empty-row"></div>
+            </div>
+            <div class="row">
+                <div class="empty-row"></div>
+            </div>
+            <div class="row">
+                <div class="empty-row"></div>
             </div>
             <div class="row">
                 <div class="empty-row"></div>
@@ -51,40 +81,6 @@
                 </div>
             </div>
         </div>
-        <div class="col empty-col"></div>
-    </div>
-
-    <div class="container card bg-secondary-color" id="back" style="display: none;">
-        <div class="col empty-col"></div>
-        <div class="text-color">
-            <div class="row">
-                <div class="col">
-                    <h1>
-                        Student (Software Engineer)
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="empty-row"></div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <span class="h1">
-                        Emile
-                    </span>
-                    <span class="h2">
-                        Metry
-                    </span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="empty-row"></div>
-            </div>
-            <div class="row">
-                <div class="empty-row"></div>
-            </div>
-        </div>
-        <div class="col empty-col"></div>
     </div>
 
 

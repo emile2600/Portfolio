@@ -54,17 +54,17 @@ body {
 .bg-primary-color {
     background-color: #00395e;
     color: #00395e;
-    animation: bg-color-switch reverse 3s;
+    animation: bg-color-switch reverse 2s;
 }
 
 .bg-secondary-color {
     background-color: #107895;
     color: white;
-    animation: bg-color-switch 3s;
+    animation: bg-color-switch 2s;
 }
 .text-color {
     color: white;
-    animation: text-color-switch 5s;
+    animation: text-color-switch 4s;
 }
 
 /* Div css
@@ -81,6 +81,7 @@ body {
   }
   .empty-col{
     width: 48px;
+    height: 48px;
   }
   .empty-xl-col{
     width: 380px;
@@ -101,10 +102,15 @@ body {
     0% {
         color: #00395e;
     }
-    60% {
+    50% {
         color: #107895;
     }
     100% {
         color: white;
     }
+}
+/* Positioning
+---------------------------------------------------*/
+.text-bottom{
+    margin-bottom: .5rem;
 }
