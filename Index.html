@@ -14,42 +14,98 @@
 
 
 <body class="bg-primary-color">
-    <div class="container grid-container card bg-secondary-color">
+    <div class="container card bg-secondary-color" id="front">
+        <div class="col empty-col"></div>
         <div class="text-color">
-            <div class="grid-row">
+            <div class="row">
                 <div class="col">
                     <h1>
                         Student (Software Engineer)
                     </h1>
                 </div>
             </div>
-            <div class="grid-row">
+            <div class="row">
                 <div class="empty-row"></div>
             </div>
-            <div class="grid-row">
+            <div class="row">
                 <div class="col">
                     <span class="h1">
-                    Emile
-                </span>
-                <span class="h2">
-                    Metry
-                </span>
+                        Emile
+                    </span>
+                    <span class="h2">
+                        Metry
+                    </span>
+                </div>
             </div>
-            </div>
-            <div class="grid-row">
+            <div class="row">
                 <div class="empty-row"></div>
             </div>
-            <div class="grid-row">
+            <div class="row">
+                <div class="col empty-xl-col"></div>
+                <div class="col empty-xl-col"></div>
+                <div class="col">
+                    <button type="button text-color" class="btn" onclick="flip">
+                        <p class="text-color">Flip <i class="fas fa-arrow-right"></i> </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col empty-col"></div>
+    </div>
+
+    <div class="container card bg-secondary-color" id="back" hidden>
+        <div class="col empty-col"></div>
+        <div class="text-color">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Student (Software Engineer)
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="empty-row"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="h1">
+                        Emile
+                    </span>
+                    <span class="h2">
+                        Metry
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="empty-row"></div>
+            </div>
+            <div class="row">
                 <div class="empty-row"></div>
             </div>
         </div>
+        <div class="col empty-col"></div>
     </div>
 
 
 
-
+    <script src="https://kit.fontawesome.com/463f92d65d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function flip() {
+            var front = document.getElementById("front");
+            var back = document.getElementById("back");
+            if (back.hasAttribute.hidden) {
+                front.toggleAttribute.hidden;
+                back.toggleAttribute.hidden;
+            }
+            else {
+                front.toggleAttribute.hidden;
+                back.toggleAttribute.hidden;
+            }
+        }
+    </script>
 </body>
 
 </html>
