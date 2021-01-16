@@ -44,7 +44,7 @@
                 <div class="col empty-xl-col"></div>
                 <div class="col empty-xl-col"></div>
                 <div class="col">
-                    <button type="button text-color" class="btn" onclick="flip">
+                    <button type="button text-color" class="btn" onclick="flip()">
                         <p class="text-color">Flip <i class="fas fa-arrow-right"></i> </p>
                     </button>
                 </div>
@@ -53,7 +53,7 @@
         <div class="col empty-col"></div>
     </div>
 
-    <div class="container card bg-secondary-color" id="back" hidden>
+    <div class="container card bg-secondary-color" id="back" style="display: none;">
         <div class="col empty-col"></div>
         <div class="text-color">
             <div class="row">
@@ -96,13 +96,13 @@
         function flip() {
             var front = document.getElementById("front");
             var back = document.getElementById("back");
-            if (back.hasAttribute.hidden) {
-                front.toggleAttribute.hidden;
-                back.toggleAttribute.hidden;
+            if (back.style.display === "none") {
+                front.style.display = "none";
+                back.style.display = "block";
             }
             else {
-                front.toggleAttribute.hidden;
-                back.toggleAttribute.hidden;
+                front.style.display = "block";
+                back.style.display = "none";
             }
         }
     </script>
