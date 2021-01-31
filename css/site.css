@@ -68,6 +68,9 @@ body {
 }
 
 .btn-color{
+    width: 117px;
+    height: 69px;
+    font-size: 2rem;
     color: white;
     animation: text-color-switch 4s;
 }
