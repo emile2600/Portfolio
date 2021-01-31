@@ -67,6 +67,15 @@ body {
     animation: text-color-switch 4s;
 }
 
+.btn-color{
+    color: white;
+    animation: text-color-switch 4s;
+}
+
+.btn.btn-color:hover{
+    color: #00395e !important;
+}
+
 /* Div css
 ---------------------------------------------------*/
 .card{
