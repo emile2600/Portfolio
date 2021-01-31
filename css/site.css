@@ -67,18 +67,31 @@ body {
     animation: text-color-switch 4s;
 }
 
-.btn-color{
+.link{
     width: 117px;
     height: 69px;
     font-size: 2rem;
+}
+.icons{
+    font-size: 2rem;
+    width: 24px;
+    height: 38px;
+}
+.btn-color{
     color: white;
     animation: text-color-switch 4s;
 }
 
-.btn.btn-color:hover{
+.btn-color:hover{
     color: #00395e !important;
 }
 
+#c-sharp-icon{
+    height: 24px;
+    width: 48px;
+    fill: white;
+    animation: icon-color-switch 4s;
+}
 /* Div css
 ---------------------------------------------------*/
 .card{
@@ -119,6 +132,17 @@ body {
     }
     100% {
         color: white;
+    }
+}
+@keyframes icon-color-switch{
+    0% {
+        fill: #00395e;
+    }
+    50% {
+        fill: #107895;
+    }
+    100% {
+        fill: white;
     }
 }
 /* Positioning
