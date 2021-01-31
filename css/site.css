@@ -109,7 +109,7 @@ body {
     min-height: 48px;
   }
   .empty-xl-col{
-    min-width: 380px;
+    width: 380px;
 }
 /* Animations
 ---------------------------------------------------*/
