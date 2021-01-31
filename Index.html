@@ -40,8 +40,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <span class="h3">
-                        Age: <pn class="h3" id="age" onload="age()"></pn>
+                    <span class="h3" id="age">
                     </span>
                 </div>
             </div>
@@ -90,6 +89,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
+
+        let age = (Date.now() - new Date(2002, 0, 17)) / 1000 / 60 / 60 / 24 / 365;
+        document.getElementById("age").innerHTML = "Age: " + age.toFixed();
+
+
         function flip() {
             var front = document.getElementById("front");
             var back = document.getElementById("back");
@@ -102,6 +106,8 @@
                 back.style.display = "none";
             }
         }
+            
+        
     </script>
 </body>
 
