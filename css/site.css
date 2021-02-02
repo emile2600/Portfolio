@@ -54,32 +54,39 @@ body {
 .bg-primary-color {
     background-color: #00395e;
     color: #00395e;
-    animation: bg-color-switch reverse 2s;
+    animation: bg-color-switch reverse 1s;
 }
 
 .bg-secondary-color {
     background-color: #107895;
     color: white;
-    animation: bg-color-switch 2s;
+    animation: bg-color-switch 1s;
 }
 .text-color {
     color: white;
-    animation: text-color-switch 4s;
+    animation: text-color-switch 2s;
 }
 
 .link{
     width: 117px;
-    height: 69px;
+    min-height: 69px;
     font-size: 2rem;
 }
 .icons{
     font-size: 2rem;
     width: 24px;
-    height: 38px;
+    min-height: 38px;
 }
 .btn-color{
     color: white;
-    animation: text-color-switch 4s;
+    animation: text-color-switch 2s;
+}
+.btn-border{
+    border: solid white 1px;
+    animation: border-color-switch 2s;
+}
+.btn-color.btn-border{
+    animation: border-text-color-switch 2s;
 }
 
 .btn-color:hover{
@@ -87,10 +94,10 @@ body {
 }
 
 #c-sharp-icon{
-    height: 24px;
+    min-height: 24px;
     width: 48px;
     fill: white;
-    animation: icon-color-switch 4s;
+    animation: icon-color-switch 2s;
 }
 /* Div css
 ---------------------------------------------------*/
@@ -113,7 +120,28 @@ body {
 }
 /* Animations
 ---------------------------------------------------*/
-
+@keyframes border-text-color-switch{
+    0%{
+        border: solid #00395e 1px;color: #00395e;
+    }
+    50%{
+        border: solid  #107895 1px;color: #107895;
+    }
+    100%{
+        border: solid white 1px;color: white;
+    }
+}
+@keyframes border-color-switch{
+    0%{
+        border: solid #00395e 1px;
+    }
+    50%{
+        border: solid  #107895 1px;
+    }
+    100%{
+        border: solid white 1px;
+    }
+}
 @keyframes bg-color-switch {
     0% {
         background-color:#00395e;
