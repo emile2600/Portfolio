@@ -50,21 +50,42 @@ body {
 
 /* Colors
 ---------------------------------------------------*/
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
 
-.bg-primary-color {
-    background-color: #00395e;
-    color: #00395e;
-    animation: bg-color-switch reverse 1s;
+.img-place-holder{
+    background-color: #EDEAE0;
+    height: 31.25rem;
 }
-
+  
+.curacao{
+    height: 20rem;
+}
+.canvas{
+    height: 31.25rem;
+    background-color: #0073cf;
+}
+.bg-primary-color {
+    background-color: #343434;
+}
 .bg-secondary-color {
-    background-color: #107895;
-    color: white;
-    animation: bg-color-switch 1s;
+    background-color:#EDEAE0;
+    color: #343434;
 }
 .text-color {
-    color: white;
-    animation: text-color-switch 2s;
+    font-size: 24px;
+    color: #EDEAE0;
+}
+.border-color-sides{
+    border-left:  #EDEAE0 0.5rem double;
+    border-right: #EDEAE0 0.5rem double;
+}
+.border-color-bottom{
+    border-bottom:  #EDEAE0 0.5rem double;
 }
 
 .link{
@@ -79,18 +100,17 @@ body {
 }
 .btn-color{
     color: white;
-    animation: text-color-switch 2s;
 }
 .btn-border{
     border: solid white 1px;
-    animation: border-color-switch 2s;
 }
-.btn-color.btn-border{
-    animation: border-text-color-switch 2s;
+
+.btn-border:hover{
+    border: solid #727272 1px !important;
 }
 
 .btn-color:hover{
-    color: #00395e !important;
+    color: #727272 !important;
 }
 
 #c-sharp-icon{
@@ -122,10 +142,10 @@ body {
 ---------------------------------------------------*/
 @keyframes border-text-color-switch{
     0%{
-        border: solid #00395e 1px;color: #00395e;
+        border: solid #002b7f 1px;color: #002b7f;
     }
     50%{
-        border: solid  #107895 1px;color: #107895;
+        border: solid  #0adfed 1px;color: #0adfed;
     }
     100%{
         border: solid white 1px;color: white;
@@ -133,10 +153,10 @@ body {
 }
 @keyframes border-color-switch{
     0%{
-        border: solid #00395e 1px;
+        border: solid #002b7f 1px;
     }
     50%{
-        border: solid  #107895 1px;
+        border: solid  #0adfed 1px;
     }
     100%{
         border: solid white 1px;
@@ -144,19 +164,19 @@ body {
 }
 @keyframes bg-color-switch {
     0% {
-        background-color:#00395e;
+        background-color:#002b7f;
     }
 
     100% {
-        background-color: #107895;
+        background-color: #0adfed;
     }
 }
 @keyframes text-color-switch {
     0% {
-        color: #00395e;
+        color: #002b7f;
     }
     50% {
-        color: #107895;
+        color: #0adfed;
     }
     100% {
         color: white;
@@ -164,17 +184,27 @@ body {
 }
 @keyframes icon-color-switch{
     0% {
-        fill: #00395e;
+        fill: #002b7f;
     }
     50% {
-        fill: #107895;
+        fill: #0adfed;
     }
     100% {
         fill: white;
     }
 }
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffff00, 0 0 40px #ffff00, 0 0 50px #ffff00, 0 0 60px #ffff00, 0 0 70px #ffff00;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #FFFF99, 0 0 40px #FFFF99, 0 0 50px #FFFF99, 0 0 60px #FFFF99, 0 0 70px #FFFF99, 0 0 80px#FFFF99;
+    }
+  }
 /* Positioning
 ---------------------------------------------------*/
 .text-bottom{
     margin-bottom: .5rem;
 }
+

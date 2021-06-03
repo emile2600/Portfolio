@@ -8,120 +8,78 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="./css/site.css" />
 
 </head>
 
 
 
 <body class="bg-primary-color">
+    <div class="container bg-secondary-color text-center">
+        <span class="h1" style="line-height:9.375rem; font-size: 6.25rem;">Welcome</span>
+    </div>
+    <div class="container border-color-sides border-color-bottom" style="padding: 0px">
 
-    <div class="container card bg-secondary-color" id="front">
-        <div class="text-color">
-            <div class="row empty-row">
-                <div class="col">
-                    <h1>
-                        Student
-                    </h1>
-                    <h2>(Software Engineer)</h2>
-                </div>
-            </div>
-            <div class="row empty-row">
-                <div class="empty-row"></div>
-            </div>
-            <div class="row empty-row">
-                <div class="col">
-                    <span class="h1">
-                        Emile
-                    </span>
-                    <span class="h2">
-                        Metry
-                    </span>
-                </div>
-                
-            </div>
-            <div class="row empty-row">
-                <div class="col">
-                    <span class="h3" id="age">
-                    </span>
-                </div>
-            </div>
-            <div class="row empty-row">
-                <div class="col empty-xl-col"></div>
-                <div class="col empty-xl-col"></div>
-                <div class="col d-flex empty-xl-col justify-content-end">
-                    <button type="button text-color" class="btn" onclick="flip()">
-                        <p class="btn-color">Flip <i class="fas fa-arrow-right"></i> </p>
-                    </button>
-                </div>
+        <br/>
+
+        <p class="text-color" style="margin-left: 5px;">
+            My name is Emile Metry. <br />
+            I'm a Software Engineer Student. <br />
+            I'm <span id="age"></span> years old. <br />
+            I come from a little island in the carribean.
+        </p>
+
+        <br/>
+
+        <div class="container canvas">
+            <div class="text-center">
+                <br/>
+                <img class="curacao" src="Images\Curacao.png" alt="The Island Curacao">
+                <br/>
+                <br/>
+                <span class=" glow">
+                    Curacao
+                </span>
             </div>
         </div>
-    </div>
 
-    <div class="container card bg-secondary-color" id="back" style="display: none;">
-        <div class="text-color">
-            <div class="row empty-row">
-                <div class="empty-row"></div>
-            </div>
-            <div class="row empty-row">
-                <div class="col text-center">
-                    <a class="btn btn-color btn-border link" href="https://github.com/emile2600">
-                        <i class="bi bi-github" aria-label="My GitHub">
-                        </i>
-                    </a>
-                </div>
-                <div class="col text-center">
-                    <a class="btn btn-color btn-border link" href="https://www.linkedin.com/in/emile-metry-3375871ab/">
-                        <i class="bi bi-linkedin">
-                        </i>
-                    </a>
-                </div> 
-            </div>
-            <div class="row empty-row">
-                <div class="empty-row"></div>
-            </div>
-            <div class="row empty-row">
-                <div class="col empty-xl-col">
-                    <h4>Main Languages:</h4>
-                </div>
-                <div class="col icons empty-xl-col">
-                    <i class="fab fa-java"></i>
-                    <svg version="1.1" viewBox="0 0 312.55 312.55" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" id="c-sharp-icon">
-                        <path d="m302.55 0h-292.55c-5.523 0-10 4.478-10 10v292.55c0 5.522 4.477 10 10 10h292.55c5.523 0 10-4.478 10-10v-292.55c0-5.522-4.477-10-10-10zm-154.47 193.29c-9.481 8.296-21.592 12.866-34.102 12.866-28.109 0-50.977-22.4-50.977-49.934 0-27.471 22.868-49.819 50.977-49.819 12.527 0 24.597 4.53 33.987 12.756 3.873 3.393 4.262 9.283 0.868 13.156-3.392 3.874-9.283 4.265-13.156 0.869-5.987-5.245-13.694-8.135-21.699-8.135-17.827 0-32.33 13.984-32.33 31.173 0 17.251 14.503 31.286 32.33 31.286 7.991 0 15.741-2.931 21.822-8.252 3.875-3.391 9.765-2.998 13.157 0.877 3.391 3.876 2.998 9.766-0.877 13.157zm92.133-31.001c5.15 0 9.324 4.174 9.324 9.323s-4.174 9.323-9.324 9.323h-10.869l-3.378 14.904c-0.981 4.328-4.826 7.265-9.085 7.265-0.683 0-1.376-0.075-2.069-0.232-5.022-1.139-8.17-6.132-7.032-11.153l2.444-10.783h-20.201l-3.378 14.904c-0.981 4.328-4.826 7.265-9.084 7.265-0.683 0-1.376-0.075-2.069-0.232-5.022-1.139-8.17-6.132-7.032-11.153l2.448-10.799c-5.007-0.162-9.019-4.262-9.019-9.308 0-5.149 4.174-9.323 9.324-9.323h3.917l2.725-12.02h-6.642c-5.149 0-9.324-4.174-9.324-9.322 0-5.15 4.174-9.324 9.324-9.324h10.869l3.378-14.904c1.138-5.021 6.134-8.17 11.154-7.032 5.022 1.139 8.17 6.132 7.032 11.153l-2.444 10.783h20.201l3.378-14.904c1.138-5.021 6.133-8.17 11.154-7.032 5.022 1.139 8.17 6.132 7.032 11.153l-2.448 10.799c5.007 0.162 9.019 4.262 9.019 9.309 0 5.148-4.174 9.322-9.324 9.322h-3.917l-2.725 12.02h6.641z"/>
-                        <polygon points="194.26 162.29 214.46 162.29 217.18 150.27 196.98 150.27"/>
-                    </svg>
-                </div>
-                <div class="col empty-xl-col">
-                </div>
-            </div>
-            <div class="row empty-row">
-                <div class="col empty-xl-col">
-                    <h4>Other Languages:</h4> 
-                </div>
-                <div class="col empty-xl-col icons">
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="col d-flex justify-content-end">
-                    <button type="button text-color" class="btn" onclick="flip()">
-                        <p class="btn-color">Flip <i class="fas fa-arrow-right"></i> </p>
-                    </button>
-                </div>
-            </div>
+        <br/>
+
+        <p class="text-color" style="margin-left: 5px;">
+            Then i went to study at The Hague University of Applied Sciences in the Netherlands. <br />
+            Where I'm studying to become a software engineer. <br />
+            <br />
+            I learned Java, C#, HTML, CSS, javascript, SQL. <br>
+            I also learned about working in groups while implementing SCRUM.
+        </p>
+        <div class="img-place-holder"></div>
+        <div class="text-center ">
+            <span class="text-color">Socials:</span>
+            <br/>
+            <a class="btn btn-color btn-border link" href="https://github.com/emile2600">
+                <i class="bi bi-github" aria-label="My Github"></i>
+            </a>
+            <a class="btn btn-color btn-border link" href="">
+                <i class="bi bi-linkedin" aria-label="My Linkedin"></i>
+            </a>
         </div>
+
+        <br/>
+
+    </div>
     </div>
 
+    
+    
 
 
     <script src="https://kit.fontawesome.com/463f92d65d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <script type="text/javascript">
 
         let age = (Date.now() - new Date(2002, 0, 17)) / 1000 / 60 / 60 / 24 / 365;
-        document.getElementById("age").innerHTML = "Age: " + age.toFixed();
+        document.getElementById("age").innerHTML = age.toFixed();
 
 
         function flip() {
@@ -136,9 +94,10 @@
                 back.style.display = "none";
             }
         }
-            
-        
+
+
     </script>
+
 </body>
 
 </html>
